@@ -26,26 +26,6 @@ function Portfolio() {
       logo:pic3,
       name:"Trombones Website"
     },
-    {
-      id:5,
-      logo:piic,
-      name:"Survey Form"
-    },
-    {
-      id:6,
-      logo:pic1,
-      name:"Basic Portfolio"
-    },
-    {
-      id:7,
-      logo:pic2,
-      name:"JS Documentation"
-    },
-    {
-      id:8,
-      logo:pic3,
-      name:"Trombones Website"
-    },
   ]
   return (
     <>
