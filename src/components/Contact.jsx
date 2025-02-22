@@ -19,7 +19,7 @@ function Contact() {
              className='bg-slate-200 w-96 px-8 py-6 shadow-xl rounded-xl' name='contactMe' netlify>
                 <h1 className='font-bold text-xl text-center'>Send Your Message</h1>
                 <div className='flex flex-col mt-10 space-y-3'>
-                    <label>FullName</label>
+                    <label>Full Name</label>
                     <input {...register("name", { required: true })}
                     className='border rounded-lg shadow appearance-none py-2 px-3 leading-tight focus:outline-none focus:shadow-outline' id="name" name='name' type='text' placeholder='Enter Your Full Name'/>
                     {errors.name && <span>This field is required</span>}
