@@ -16,7 +16,7 @@ function Contact() {
             <h1 className='bg-gradient-to-r from-navcol to-navcoll font-bold text-xl box-content p-4 border-4 text-center md:py-5 tracking-widest'>Contact ME</h1>
             <div className='flex flex-col items-center justify-center mt-10'>
             <form onSubmit={handleSubmit(onSubmit)}
-             className='bg-slate-200 w-96 px-8 py-6 shadow-xl rounded-xl' name='contactMe' netlify>
+             className='bg-slate-200 w-96 px-8 py-6 shadow-xl rounded-xl' name='contactMe' method="POST" netlify>
                 <h1 className='font-bold text-xl text-center'>Send Your Message</h1>
                 <div className='flex flex-col mt-10 space-y-3'>
                     <label>Full Name</label>
@@ -36,7 +36,9 @@ function Contact() {
                     className='border rounded-lg shadow appearance-none py-5 px-3 leading-tight focus:outline-none focus:shadow-outline' id="message" name='message' type='text' placeholder='Enter Your Query'/>
                     {errors.message && <span>This field is required</span>}
                 </div>
-                <button className='bg-black hover:bg-red-950 text-white rounded px-6 py-2 mx-28 mt-6'>Send</button>
+                <button 
+                type='submit' 
+                className='bg-black hover:bg-red-950 text-white rounded px-6 py-2 mx-28 mt-6'>Send</button>
             </form>
         </div>
     </div>
