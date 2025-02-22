@@ -7,7 +7,7 @@ function Contact() {
             <h1 className='bg-gradient-to-r from-navcol to-navcoll font-bold text-xl box-content p-4 border-4 text-center md:py-5 tracking-widest'>Contact ME</h1>
             <div className='flex flex-col items-center justify-center mt-10'>
             <form
-             className='bg-slate-200 w-96 px-8 py-6 shadow-xl rounded-xl' name='contactMEE' method='post' data-netlify="true">
+             className='bg-slate-200 w-96 px-8 py-6 shadow-xl rounded-xl' name="contactME" netlify>
                 <h1 className='font-bold text-xl text-center'>Send Your Message</h1>
                 <div className='flex flex-col mt-10 space-y-3'>
                     <label>Full Name</label>
