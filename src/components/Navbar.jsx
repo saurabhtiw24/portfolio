@@ -29,15 +29,11 @@ function Navbar() {
     ]
   return (
     <>
-    <div className='bg-gradient-to-r from-navcol to-navcoll max-w-screen-2xl container mx-auto px-4 md:px-20 h-20 fixed top-0 left-0 right-0'>
-        <div className='flex justify-between items-center h-16'>
-            <div className='flex space-x-2'>
-                <h1 className='md:flex text-3xl italic font-["Brush_Script"] absolute top-3'>tiwari
-                <p className='text-3xl font-semibold'>Saurabh</p></h1>
-            </div>
+    <div className='bg-gradient-to-r from-navcol to-navcoll max-w-screen-2xl container mx-auto px-4 md:px-20 h-12 fixed top-0 left-0 right-0'>
+        <div className='flex md:items-center md:justify-center justify-end items-center h-10'>
             {/* Desktop Navbar */}
             <div>
-                <ul className='hidden md:flex space-x-8'>
+                <ul className='hidden items-center md:flex space-x-8'>
                 {
                         navItems.map((item) => (
                             <li className="hover:scale-105 hover:text-white duration-200 cursor-pointer" key={item.id}>

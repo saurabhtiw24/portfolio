@@ -10,7 +10,7 @@ import resume from "../../src/assets/resume.pdf"
 function Home() {
   return (
     <>
-    <div name="Home" className='bg-[url("/src/assets/HOMEIMG.jpg")] h-auto bg-cover bg-no-repeat'>
+    <div name="Home" className='bg-[url("/src/assets/HOMEIMG.jpg")] size-full py-4 bg-cover bg-no-repeat'>
     <div className='max-w-screen-2xl container mx-auto px-4 md:px-20 my-20'>
         <div className='flex flex-col md:flex-row'>
             <div className='md:w-1/2 mt-5 md:mt-24 space-y-2 order-2 md:order-1'>
@@ -47,7 +47,7 @@ function Home() {
               </ul>
             </div>
             </div>
-            <div className='md:w-1/2 md:ml-48 md:mt-16 mt-14 order-1'>
+            <div className='md:w-1/2 md:ml-48 md:mt-16 mt-0 order-1'>
                 <img src={pic} className='rounded-full md:w-[350px] md:h-[350px]'/>
                 <a href={resume} download='resume'>
                 <button className="bg-white hover:bg-stone-700 hover:text-white text-stone-700 font-bold md:mx-16 mx-24 md:my-10 my-4 py-2 px-4 rounded inline-flex items-center">
