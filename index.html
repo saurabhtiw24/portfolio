@@ -7,9 +7,18 @@
     <title>Vite + React</title>
   </head>
   <body>
-    <form name="contactME" netlify>
-    </form>
     <div id="root"></div>
+    <form name="contact" data-netlify="true" hidden>
+      <div>
+        <input type='text' id="name" name='name' />
+      </div>
+      <div>
+        <input type='text' id="email" name='email' />
+      </div>
+      <div>
+        <textarea type='text' id="message" name='message' />
+      </div>
+    </form>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
