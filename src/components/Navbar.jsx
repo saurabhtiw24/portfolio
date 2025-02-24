@@ -29,7 +29,7 @@ function Navbar() {
     ]
   return (
     <>
-    <div className='bg-gradient-to-r from-navcol to-navcoll max-w-screen-2xl container mx-auto px-4 md:px-20 h-12 fixed top-0 left-0 right-0'>
+    <div className='bg-gradient-to-r from-navcol to-navcoll max-w-full container mx-auto px-4 md:px-20 h-12 fixed top-0 left-0 right-0'>
         <div className='flex md:items-center md:justify-center justify-end items-center h-10'>
             {/* Desktop Navbar */}
             <div>
