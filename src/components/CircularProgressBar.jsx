@@ -38,7 +38,7 @@ const CircularProgressBar = ({ percentage, skillName }) => {
         />
       </svg>
       <div className="absolute text-center text-xl font-bold">{`${percentage}%`}</div>
-      <div className="mt-2 text-sm">{skillName}</div>
+      <div className="mt-2 text-xl">{skillName}</div>
     </div>
   );
 };
