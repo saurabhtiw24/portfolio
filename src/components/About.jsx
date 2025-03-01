@@ -1,61 +1,49 @@
-import React from 'react'
-import sseventy from "../../src/assets/sseventy.png"
-import snintey from "../../src/assets/snintey.png"
-import shundred from "../../src/assets/shundred.png"
+import React, { useState, useEffect } from 'react'
+import CircularProgressBar from "./CircularProgressBar";
 
 function About() {
-  const cardItems=[
-      {
-        id:1,
-        logo:shundred,
-        name:"HTML"
-      },
-      {
-        id:2,
-        logo:shundred,
-        name:"CSS"
-      },
-      {
-        id:3,
-        logo:shundred,
-        name:"JS"
-      },
-      {
-        id:4,
-        logo:shundred,
-        name:"ReactJS"
-      },
-      {
-        id:5,
-        logo:sseventy,
-        name:"SQL"
-      },
-      {
-        id:6,
-        logo:sseventy,
-        name:"MongoDB"
-      },
-      {
-        id:7,
-        logo:sseventy,
-        name:"PostgreSQL"
-      },
-      {
-        id:8,
-        logo:shundred,
-        name:"Bootstrap"
-      },
-      {
-        id:9,
-        logo:snintey,
-        name:"Redux"
-      },
-      {
-        id:9,
-        logo:shundred,
-        name:"Git"
-      },
-    ]
+  const [percentageHTML, setPercentageHTML] = useState(0);
+  const [percentageCSS, setPercentageCSS] = useState(0);
+  const [percentageJS, setPercentageJS] = useState(0);
+  const [percentageReactJS, setPercentageReactJS] = useState(0);
+  const [percentageSQL, setPercentageSQL] = useState(0);
+  const [percentageMongoDB, setPercentageMongoDB] = useState(0);
+  const [percentagePostgreSQL, setPercentagePostgreSQL] = useState(0);
+  const [percentageBootstrap, setPercentageBootstrap] = useState(0);
+  const [percentageRedux, setPercentageRedux] = useState(0);
+  const [percentageGit, setPercentageGit] = useState(0);
+
+  useEffect(() => {
+    // Simulate animation by gradually increasing percentage
+    const interval = setInterval(() => {
+      setPercentageHTML((prev) => (prev < 100 ? prev + 1 : 100));
+      setPercentageCSS((prev) => (prev < 100 ? prev + 1 : 100));
+      setPercentageJS((prev) => (prev < 100 ? prev + 1 : 100));
+      setPercentageReactJS((prev) => (prev < 100 ? prev + 1 : 100));
+      setPercentageSQL((prev) => (prev < 85 ? prev + 1 : 85));
+      setPercentageMongoDB((prev) => (prev < 70 ? prev + 1 : 70));
+      setPercentagePostgreSQL((prev) => (prev < 70 ? prev + 1 : 70));
+      setPercentageBootstrap((prev) => (prev < 70 ? prev + 1 : 70));
+      setPercentageRedux((prev) => (prev < 90 ? prev + 1 : 90));
+      setPercentageGit((prev) => (prev < 100 ? prev + 1 : 100));
+    }, 20); // Update every 20ms
+
+    return () => clearInterval(interval);
+  }, []);
+
+  useEffect(() => {
+    // Simulate animation by gradually increasing percentage
+    const interval = setInterval(() => {
+      setPercentageReact((prev) => (prev < 90 ? prev + 1 : 90));
+      setPercentageJS((prev) => (prev < 80 ? prev + 1 : 80));
+      setPercentageCSS((prev) => (prev < 70 ? prev + 1 : 70));
+      setPercentageNode((prev) => (prev < 85 ? prev + 1 : 85));
+    }, 20); // Update every 20ms
+
+    return () => clearInterval(interval);
+  }, []);
+
+
   return (
     <>
       <div name="About" className='max-w-screen-2xl container mx-auto md:px-20 my-24 md:my-24 space-x-5'>
@@ -74,19 +62,42 @@ function About() {
       {/* Skill section */}
     <div className='max-w-screen-2xl container mx-auto md:px-20 mt-32'>
       <div>
-      <h1 className='bg-gradient-to-r from-navcol to-navcoll font-bold text-xl box-content py-4 border-4 text-center md:py-5 tracking-widest'>SKILLS</h1>
-        <div className='grid grid-cols-2 md:grid-cols-5 gap-7 my-5'>{
-          cardItems.map(({id,logo,name}) => (
-            <div className='flex flex-col items-center justify-center md:w-[200px] md:h-[200px] p-1' key={id}>
-                <div className=''>{name}</div>
-                <img src={logo} className='md:w-[150px] md:h-[150px] w-[150px] md:mx-16'/>
-            </div>
-          ))
-          }
+        <h1 className='bg-gradient-to-r from-navcol to-navcoll font-bold text-xl box-content py-4 border-4 text-center md:py-5 tracking-widest'>SKILLS</h1>
+        <div className='grid grid-cols-2 md:grid-cols-5 gap-7 my-5'>
+        <div className="flex justify-center">
+          <CircularProgressBar percentage={percentageHTML} skillName="HTML" />
+        </div>
+        <div className="flex justify-center">
+          <CircularProgressBar percentage={percentageCSS} skillName="CSS" />
+        </div>
+        <div className="flex justify-center">
+          <CircularProgressBar percentage={percentageJS} skillName="JS" />
+        </div>
+        <div className="flex justify-center">
+          <CircularProgressBar percentage={percentageReactJS} skillName="ReactJS" />
+        </div>
+        <div className="flex justify-center">
+          <CircularProgressBar percentage={percentageSQL} skillName="SQL" />
+        </div>
+        <div className="flex justify-center">
+          <CircularProgressBar percentage={percentageMongoDB} skillName="MongoDB" />
+        </div>
+        <div className="flex justify-center">
+          <CircularProgressBar percentage={percentagePostgreSQL} skillName="PostgreSQL" />
+        </div>
+        <div className="flex justify-center">
+          <CircularProgressBar percentage={percentageBootstrap} skillName="Bootstrap" />
+        </div>
+        <div className="flex justify-center">
+          <CircularProgressBar percentage={percentageRedux} skillName="Redux" />
+        </div>
+        <div className="flex justify-center">
+          <CircularProgressBar percentage={percentageGit} skillName="Git" />
         </div>
         </div>
+      </div>
     </div>
-    <hr className='mx-14 md:mx-36'  />
+    <hr className='mx-14 md:mx-36 mt-20'  />
   </>
   )
 }
