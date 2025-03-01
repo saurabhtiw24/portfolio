@@ -3,34 +3,49 @@ import React from 'react'
 function Experience() {
   return (
     <>
-    <div name="Experience" className='max-w-screen-2xl container mx-auto md:px-20 my-24 md:my-32 space-x-5'>
-        {/* <div className='flex space-y-10 md:space-y-0 md:space-x-16'> */}
-        <h1 className='bg-gradient-to-r from-navcol to-navcoll font-bold text-xl box-content p-4 border-4 text-center md:py-5 tracking-widest'>WORK EXPERIENCE</h1>
-        <ul className='text-justify'>
-            <li className='font-extrabold font-["Times_New_Roman"] list-disc text-3xl md:text-4xl pt-16'>
+      <div name="Experience" className='max-w-screen-2xl container mx-auto md:px-20 my-24 md:my-32'>
+        {/* Title */}
+        <h1 className='bg-gradient-to-r from-navcol to-navcoll font-bold text-xl box-content p-4 border-4 text-center md:py-5 tracking-widest'>
+          WORK EXPERIENCE
+        </h1>
+
+        {/* Company Info */}
+        <div className='mt-16'>
+          <div className='flex flex-col md:flex-row md:items-center justify-between'>
+            <div>
+              <p className='font-extrabold font-serif text-3xl md:text-4xl'>
                 INFOSYS
-            </li>
-            <li className='italic'>
+              </p>
+              <p className='italic text-xl'>
                 (Frontend Engineer)
-            </li>
-            <li className='italic'>
-                (Februray, 2020 - Present)
-            </li>
-            <li className='list-disc'>
-                Develop end to end components for filtering items.
-            </li>
-            <li className='list-disc'>
-                Designed and developed the frontend components for Home, Login and Dashboard.
-            </li>
-            <li className='list-disc'>
-                Spearheaded a new feature for the application to enable checkout and a more accurate tracking system.
-            </li>
-            <li className='list-disc'>
-                Active involvement in sprint planning and analyzing user requirements.
-            </li>
-        </ul>
-    </div>
-    <hr className='mx-14 md:mx-36'  />
+              </p>
+            </div>
+            <div>
+              <p className='italic text-xl'>
+                (February 2020 - Present)
+              </p>
+            </div>
+          </div>
+
+          {/* Experience Bullet Points */}
+          <ul className='list-disc pl-6 space-y-2 text-xl mt-6'>
+            <li>Implemented a sophisticated transaction filtering mechanism using Finacle and PostgreSQL, optimizing Frontend processing with ReactJS
+            and achieving a 25% improvement in system response times.</li>
+            <li>Utilized Finacle for financial data processing and integration, allowing for efficient handling of banking information and services related to
+            the project.</li>
+            <li>Spearheaded a new feature for the application to connect with real time deduction</li>
+            <li>Active involvement in sprint planning and analyzing user requirements.</li>
+            <li>Developed scripting logic to automate tasks, error handling and streamlining the project's workflow.</li>
+            <li>Also Used Finacle and scripting to generate com scripts.</li>
+            <li>Perform EOD/BOD on all day transactions and tasks.</li>
+            <li>Implemented advanced front-end functionality using JavaScript and React.js, including filtering, search functionality, and interactive sorting
+            to enhance user experience.</li>
+          </ul>
+        </div>
+      </div>
+      
+      {/* Divider */}
+      <hr className='mx-14 md:mx-36 mt-8' />
     </>
   )
 }
