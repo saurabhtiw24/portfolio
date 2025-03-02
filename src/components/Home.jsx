@@ -4,7 +4,7 @@ import { FaGithub } from "react-icons/fa";
 import { FaTelegramPlane } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { ReactTyped } from "react-typed";
-import pic from "../../src/assets/mypic.png"
+import pic from "../../src/assets/mypic.jpg"
 import resume from "../../src/assets/resume.pdf"
 
 function Home() {
