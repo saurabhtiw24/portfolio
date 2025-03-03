@@ -44,10 +44,10 @@ function Portfolio() {
               <img src={pic2} alt="JS Documentation Project" className='md:w-[150px] md:h-[150px] w-full h-[120px] md:mx-12 p-1 md:rounded-full border-[2px]' />
               <div className='font-bold px-4 text-center'>JS Documentation</div>
               <div className='md:px-6 px-24 py-4 space-x-2 md:justify-around'>
-                <a href="https://codepen.io/saurabh-tiwari-the-lessful/full/XWxPROw" target='_blank' rel="noopener noreferrer">
+                <a href="https://codepen.io/saurabh-tiwari-the-lessful/pen/Yzyoprg" target='_blank' rel="noopener noreferrer">
                   <button className='bg-blue-500 hover:bg-gray-700 text-black hover:text-white font-bold px-2 py-2 rounded'>View</button>
                 </a>
-                <a href="https://codepen.io/saurabh-tiwari-the-lessful/pen/XWxPROw" target='_blank' rel="noopener noreferrer">
+                <a href="https://codepen.io/saurabh-tiwari-the-lessful/full/Yzyoprg" target='_blank' rel="noopener noreferrer">
                   <button className='bg-orange-400 hover:bg-orange-800 text-black hover:text-white font-bold px-2 py-2 rounded'>Source Code</button>
                 </a>
               </div>
